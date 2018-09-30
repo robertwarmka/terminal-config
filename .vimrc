@@ -47,5 +47,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
+Plug 'rakr/vim-one'
+Plug 'tomasr/molokai'
 
 call plug#end()
+
+if filereadable(glob('~/.vim/plugged/vim-one/colors/one.vim'))
+    colorscheme one
+    set background=dark
+else
+    colorscheme slate
+endif
