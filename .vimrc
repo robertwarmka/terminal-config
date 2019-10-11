@@ -159,3 +159,8 @@ set textwidth=100
 if exists('+colorcolumn')
     set colorcolumn=100
 endif
+
+" Windows WSL color refresh problem fix
+if (&term =~ '^xterm' && &t_Co == 256)
+    set t_ut= | set ttyscroll=1
+endif
