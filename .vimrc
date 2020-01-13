@@ -23,7 +23,6 @@ noremap <LeftMouse> <nop>
 noremap <2-LeftMouse> <nop>
 noremap <3-LeftMouse> <nop>
 noremap <4-LeftMouse> <nop>
-noremap <4-LeftMouse> <nop>
 noremap <RightMouse> <nop>
 noremap <2-RightMouse> <nop>
 noremap <3-RightMouse> <nop>
@@ -32,7 +31,6 @@ noremap <4-RightMouse> <nop>
 inoremap <LeftMouse> <nop>
 inoremap <2-LeftMouse> <nop>
 inoremap <3-LeftMouse> <nop>
-inoremap <4-LeftMouse> <nop>
 inoremap <4-LeftMouse> <nop>
 inoremap <RightMouse> <nop>
 inoremap <2-RightMouse> <nop>
@@ -114,6 +112,7 @@ Plug 'tpope/vim-fugitive', { 'on': [] }
 Plug 'tomasr/molokai'
 Plug 'sheerun/vim-polyglot'
 Plug 'kburdett/vim-nuuid'
+Plug 'rust-lang/rust.vim'
 
 command! Gstatus call LazyLoadFugitive('Gstatus')
 command! Gdiff call LazyLoadFugitive('Gdiff')
